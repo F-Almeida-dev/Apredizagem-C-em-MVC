@@ -1,0 +1,21 @@
+@model CadAluno.Models.Fruta
+
+<h1>Cadastre de Fruta</h1>
+
+@*Criar o Fomulário de cadastro de fruta*@
+<form asp-action="Create" method= "post">
+<label for="">Nome:</label> 
+<input asp-for="Nome" class="from-control">
+
+<br>
+<label>Cor:</label>
+<input asp-for="Cor" class="from-control">
+
+<br>
+<label>Categoria:</label>
+<input asp-for="Categoria" class="from-control">
+
+<br>
+<br>
+<button class="btn btn-success">Salvar</button>
+</form>
