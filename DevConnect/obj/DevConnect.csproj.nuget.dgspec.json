@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\DevConnect\\DevConnect.csproj": {}
+    "C:\\Users\\50242919804\\Desktop\\MVC\\DevConnect\\DevConnect.csproj": {}
   },
   "projects": {
-    "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\DevConnect\\DevConnect.csproj": {
+    "C:\\Users\\50242919804\\Desktop\\MVC\\DevConnect\\DevConnect.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\DevConnect\\DevConnect.csproj",
+        "projectUniqueName": "C:\\Users\\50242919804\\Desktop\\MVC\\DevConnect\\DevConnect.csproj",
         "projectName": "DevConnect",
-        "projectPath": "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\DevConnect\\DevConnect.csproj",
+        "projectPath": "C:\\Users\\50242919804\\Desktop\\MVC\\DevConnect\\DevConnect.csproj",
         "packagesPath": "C:\\Users\\50242919804\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\DevConnect\\obj\\",
+        "outputPath": "C:\\Users\\50242919804\\Desktop\\MVC\\DevConnect\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\50242919804\\AppData\\Roaming\\NuGet\\NuGet.Config"

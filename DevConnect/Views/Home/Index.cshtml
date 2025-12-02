@@ -1,8 +1,56 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "DevConnect - Login";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<link rel="stylesheet" href="~/css/login.css">
+
+ <h1>Tela Principal login</h1>
+    <main>
+        <div>
+        <!-- Formulário -->
+          <form id="formulario">
+
+            <img src="../images/logo-devconnect-lg.svg" alt="Logo-DevConnection">
+
+
+
+            <div>
+            <label for="">Nome de usuário:</label>
+            <input type="text" name="" id="">
+            </div>
+
+
+            <div>
+            <label for="">Senha:</label>
+            <input type="password" name="" id="">
+            </div>
+
+
+            <button type="submit" class="formulario-botao-azul">Entrar</button>
+            <p>ou</p>
+
+            <a href="#">Esqueceu a senha?</a>
+
+          </form>
+
+
+        <!-- seção cadastro -->
+          <section id="secao-cadastro">
+
+            <p> Não tem uma conta? <a href="cadastro.html"> Cadastre-se </a></p>
+
+          </section>
+
+          <p id="informacao-aplicativo">obtenha o app</p>
+        <!-- seção instalação -->
+
+
+          <section id="secao-instalacao">
+            
+            <img src="../images/app-store.svg" alt="app apple store">
+            
+            <img src="../images/google-play.svg" alt="app google-play">
+          </section>
+
+        </div>
+    </main>
