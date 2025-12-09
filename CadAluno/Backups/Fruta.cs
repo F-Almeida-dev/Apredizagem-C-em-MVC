@@ -11,9 +11,9 @@ namespace CadAluno.Models
         //Nome
         //Cor
 
-        public int Id;
-        public string Nome = "";
-        public string Cor= "";
-        public string Categoria= "";
+           public int Id {get; set;}
+        public string Nome {get; set;}
+        public string Cor {get; set;}
+        public string Categoria {get; set;}
     }
 }

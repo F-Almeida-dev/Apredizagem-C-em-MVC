@@ -7,7 +7,7 @@
   <header id="cabecalho">
 
     <nav>
-      <a id="logo-desktop" href="./feed.html">
+      <a id="logo-desktop" asp-controller="Home" asp-action="Index">
         <img src="../images/logo-devconnect-md.svg" alt="Logo da empressa DevConnect">
       </a>
 
@@ -17,7 +17,7 @@
 
       <div class="cabecalho-acoes">
 
-        <a href="./feed.html">
+        <a asp-controller="Home" asp-action="Index">
           <img src="../images/icone-casa-azul.svg" alt="Ícone de uma casa na cor azul">
         </a>
 
@@ -25,7 +25,7 @@
           <img src="../images/icone-coracao-azul.svg" alt="Ícone de uma coração azul">
         </a>
 
-        <a href="#">
+        <a asp-controller="Usuario" asp-action="Perfil">
           <img class="foto-perfil" src="../images/bill-it-acoisa.jpg" alt="Foto de perfil">
         </a>
 

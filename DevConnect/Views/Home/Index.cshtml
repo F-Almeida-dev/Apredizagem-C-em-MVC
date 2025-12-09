@@ -4,7 +4,13 @@
 
 <link rel="stylesheet" href="~/css/login.css">
 
- <h1>Tela Principal login</h1>
+<script defer>
+    const UsuarioNovoCadastrado = "@TempData[key: "UsuarioNovoCadastrado"]";
+
+    if(UsuarioNovoCadastrado == "Nao cadastrato"){
+      alert("Usuário cadastrado com sucesso!!!");
+</script>
+
     <main>
         <div>
         <!-- Formulário -->
@@ -37,7 +43,7 @@
         <!-- seção cadastro -->
           <section id="secao-cadastro">
 
-            <p> Não tem uma conta? <a href="cadastro.html"> Cadastre-se </a></p>
+            <p> Não tem uma conta? <a asp-action="Index" asp-controller="Usuario"> Cadastre-se </a></p>
 
           </section>
 

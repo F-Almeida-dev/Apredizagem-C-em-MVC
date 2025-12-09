@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\CadAluno\\CadAluno.csproj": {}
+    "C:\\Users\\50242919804\\Desktop\\MVC\\CadAluno\\CadAluno.csproj": {}
   },
   "projects": {
-    "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\CadAluno\\CadAluno.csproj": {
+    "C:\\Users\\50242919804\\Desktop\\MVC\\CadAluno\\CadAluno.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\CadAluno\\CadAluno.csproj",
+        "projectUniqueName": "C:\\Users\\50242919804\\Desktop\\MVC\\CadAluno\\CadAluno.csproj",
         "projectName": "CadAluno",
-        "projectPath": "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\CadAluno\\CadAluno.csproj",
+        "projectPath": "C:\\Users\\50242919804\\Desktop\\MVC\\CadAluno\\CadAluno.csproj",
         "packagesPath": "C:\\Users\\50242919804\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\50242919804\\Desktop\\Back End\\MVC\\CadAluno\\obj\\",
+        "outputPath": "C:\\Users\\50242919804\\Desktop\\MVC\\CadAluno\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\50242919804\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,18 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

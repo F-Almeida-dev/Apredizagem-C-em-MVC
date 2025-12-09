@@ -4,7 +4,7 @@
 
 <header id="cabecalho">
     <nav>
-        <a id="logo-desktop" href="./feed.html">
+        <a id="logo-desktop" asp-controller="Home" asp-action="Index"">
             <img src="../images/logo-devconnect-md.svg" alt="logo da empresa"> </a>
 
         <a id="logo-mobile" href="./feed.html">
@@ -13,8 +13,9 @@
 
         <div class="cabecalho-acoes">
 
-            <a href="#">
-                <img src="../images/icone-casa-azul.svg" alt="">
+            <a id="logo-desktop" asp-controller="feed" asp-action="Index">
+
+            <img src="../images/icone-casa-azul.svg" alt="">
             </a>
 
             <a href="#">
