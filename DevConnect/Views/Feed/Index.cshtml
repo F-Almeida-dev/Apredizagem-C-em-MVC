@@ -1,6 +1,21 @@
-<h1>Página de Feed</h1>
+@using Microsoft.IdentityModel.Tokens
+@model List<DevConnect.Models.TbPublicacao>
+ <h1>Página de Feed</h1>
 
 <link rel="stylesheet" href="~/css/feed.css">
+
+<script defer>
+    let PublicacaoNovaCadastrado = "@ViewBag.PublicacaoCadastrada";
+
+    if(PublicacaoNovaCadastrado == "Nao cadastrada"){
+      alert("Usuário não cadastrado! Tente novamente!!!");
+    }
+
+    else if(PublicacaoNovaCadastrado == "Cadastrada"){
+      alert("Publicação postada...");
+    }
+
+</script>
 
  <h1>Tela Feed - DevConnect</h1>
 
@@ -104,41 +119,48 @@
 
         <h2>Publicação</h2>
 
-        <form action=""></form>
+        <form enctype="multuipart/form-data" methot= "post" asp-controller="Feed" asp-action="Index">
+        <textarea name="Descricao" id="escrever texto" placeholder="Digite aqui na descricao do post" required></textarea>
 
-        <textarea name="" id="" placeholder="Digite a descrição do post..."></textarea>
         <footer>
 
 
           <div>
             <label for="campo-upload" id="texto-upload">Faça upload da sua imagem aqui....
             </label>
-            <input type="file" name="" id="campo-upload">
+            <input type="file" name="image" id="campo-upload">
 
             <button type="submit" class="formulario-botao-azul">Postar</button>
 
+        </form>
 
-
-          </div>
+           </div>
         </footer>
       </section>
-
+ 
 
       <section id="publicacoes">
+
+      @foreach (TbPublicacao publi in Model)
+      {
+      
+      if(!publi.ImagemUrl.IsNullOrEmpty())
+      { 
         <article class="card-publi">
           <header>
 
             <a href="#">
-              <img class="foto-perfil" src="../images/bill-it-acoisa.jpg" alt="Foto de perfil">
-              pennywise
+              <img class="foto-perfil" src="~/images/@publi.IdUsuarioNavigation?.FotoPerfilUrl">
+              alt="Foto de Perfil"
+              @publi.IdUsuarioNavigation?.NomeDeUsuario
             </a>
           </header>
           <figure>
-            <img class="imagem-publicacao" src="../images/image 2.png" alt="">
+            <img class="imagem-publicacao" src="~/images/@publi.ImagemUrl" alt="">
 
             <figcaption class="descricao-publicacao">
-              Alanzoktop1br
-              <p>Acabei de tirar uma foto com um fã meu😊😊</p>
+             @publi.IdUsuarioNavigation?.NomeDeUsuario
+             <p>@publi.Descricao</p>
             </figcaption>
 
             <div class="interacoes-publicacao">
@@ -160,6 +182,14 @@
            <button type="button">Ver mais comentários...</button>
 
         </article>
+
+
+      }
+     
+     
+      }
+
+      
       </section>
 
 

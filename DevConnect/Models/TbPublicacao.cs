@@ -15,11 +15,11 @@ public partial class TbPublicacao
 
     [Column("descricao")]
     [StringLength(500)]
-    public string? Descricao { get; set; }
+    public string Descricao { get; set; } = null!;
 
     [Column("imagemUrl")]
     [StringLength(255)]
-    public string ImagemUrl { get; set; } = null!;
+    public string? ImagemUrl { get; set; }
 
     [Column("data_Publicacao")]
     public DateOnly DataPublicacao { get; set; }
